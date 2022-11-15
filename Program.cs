@@ -8,21 +8,24 @@ namespace BasicCoreProgramming
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To the Power of 2 Program");
-            Console.WriteLine("Enter the Power Of 2");
+            Console.WriteLine("Welcome To Harmonic Number Program");
+            Console.WriteLine("Enter the Value of N");
             int N =Convert.ToInt32(Console.ReadLine());
-            if (N > 0 && N < 31)
+            double Sum = 0;
+            if (N > 0 )
             {
-                for (int i = 1; i <= N; i++)
+                for (double i = 1; i <= N; i++)
                 {
-                    double number = Math.Pow(2, i);
-                    Console.WriteLine(number);
+                    double HarmonicNumber = (1 / i);
+                    Sum += HarmonicNumber;
+                    Console.WriteLine("The Harmonic Number is " + HarmonicNumber.ToString());
                 }
+                Console.WriteLine("The Sum of Harmonic Number is " + Sum);
             }
             
             else
             {
-                Console.WriteLine("Invalid Number");
+                Console.WriteLine("Invalid Entry");
             }
              
 
